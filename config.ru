@@ -26,8 +26,7 @@ require 'rack/rewrite'
 #
 
 
-use Rack::Static, 
-  :urls => ["css", "js", "images"],
+use Rack::Static,
   :root => "public"
 
 run lambda { |env|
